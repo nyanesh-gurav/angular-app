@@ -19,6 +19,7 @@ export class LoginComponent implements OnInit {
     if (this.authenticateService.authenticate(this.userName, this.password)){
       this.router.navigate(['welcome', this.userName]);
       this.isCredential = false;
+	  console.log("my login page :");
     }
     else {
       this.isCredential = true;
