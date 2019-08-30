@@ -1,0 +1,15 @@
+<h1>Welcome!! </h1>
+<div class="container">
+  <h5>You can manage list <a href="/list/nyanesh"> Click here  </a></h5>
+ 
+</div>
+<div class="container">
+Click here to get wel come message 
+<button class="btn btn-success" (click)="getWelcomeMessage()">Get Welcome Message</button>
+</div>
+<div class="container" *ngIf="welcomemessage">
+  <h2>Click here to get wel come message </h2>
+  {{welcomemessage}}
+  </div>
+
+

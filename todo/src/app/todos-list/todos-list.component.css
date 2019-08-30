@@ -1,0 +1,19 @@
+table th{
+    background-color: cornflowerblue
+}
+table td:nth-child(3){
+    background-color:lightgrey;
+    color: blue
+}
+
+
+/* Advance css for table td */
+
+/* table td:first-child{
+    background-color:lightgrey;
+    color: blue
+}
+table td:last-child{
+    background-color:lightgrey;
+    color: blue
+} */

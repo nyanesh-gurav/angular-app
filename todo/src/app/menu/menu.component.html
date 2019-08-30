@@ -1,0 +1,14 @@
+<header  >
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fontSize">
+
+      <ul class="navbar-nav ">
+        <li><a *ngIf="authenticate.isUserLoggedIn()" routerLink="/welcome/nyanesh" class="nav-link"><b>Home</b></a></li>
+        <li ><a  *ngIf="authenticate.isUserLoggedIn()"  routerLink="/list/nyanesh" class="nav-link"><b>Todos</b></a></li>
+      </ul>
+      <ul class="navbar-nav navbar-collapse justify-content-end">
+        <li><a  *ngIf="!authenticate.isUserLoggedIn()"  routerLink="/login" class="nav-link"><b>Login</b></a></li>
+        <li ><a  *ngIf="authenticate.isUserLoggedIn()"  routerLink="/logout" class="nav-link"><b>Logout</b></a></li>
+      </ul>
+    
+  </nav>
+</header>

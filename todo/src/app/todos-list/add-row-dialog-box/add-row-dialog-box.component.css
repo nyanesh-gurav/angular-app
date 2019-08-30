@@ -1,0 +1,9 @@
+.backgroundColor{
+    background-color: lightslategray; 
+}
+.button:hover { 
+    background-color: red;
+  }
+  input.ng-invalid.ng-touched,select.ng-invalid.ng-touched{
+   border-left: 7px solid red;  
+  }

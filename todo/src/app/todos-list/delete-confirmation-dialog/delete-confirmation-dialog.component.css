@@ -1,0 +1,13 @@
+.backgroundColor{
+    background-color: lightslategray; 
+}
+.button:hover { 
+    background-color: red;
+  }
+  .oKButtonWidth{
+   
+    width:100%;
+  }
+  .cancelButtonWidth{
+    width:100%;
+  }

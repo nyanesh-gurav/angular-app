@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+@import url(https://unpkg.com/bootstrap@4.1.1/dist/css/bootstrap.min.css);
+
+
+snack-bar-container.success{
+margin-top:60px;
+    background-color:green;
+    color:white;
+}
+snack-bar-container.notification{
+    margin-top:60px;
+    font-size:18px !important;
+    font-weight:bold;
+}
+snack-bar-container.warning{
+    margin-top:60px;
+        background-color:rgb(255, 0, 0);
+        color:white;
+    }
+    snack-bar-container.notification{
+        margin-top:60px;
+        font-size:18px !important;
+        font-weight:bold;
+    }
+    snack-bar-container.error{
+        margin-top:60px;
+            background-color:rgba(255, 0, 0, 0.712);
+            color:white;
+        }
+        snack-bar-container.notification{
+            margin-top:60px;
+            font-size:18px !important;
+            font-weight:bold;
+        }
+
+
+
+
+
+

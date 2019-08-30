@@ -1,0 +1,45 @@
+<h1 class="alert alert-success ml-3 mr-3 text-center">Angular Project</h1>
+<div class="container">
+  <div class="alert alert-success" *ngIf="addedResponse">{{addedResponse}}</div>
+  <div class="alert alert-success" *ngIf="updatedResponse">{{updatedResponse}}</div>
+  <div class="alert alert-warning" *ngIf="message">{{message}}</div>
+  <div class="row ">
+    <div class="col-1">
+      <button (click)="onAddClick()" class="btn btn-primary "><i class="fa fa-plus" aria-hidden="true" title="Add"></i> Create</button>
+    </div>
+    <div class="col-11 mb-2">
+      <input type="text" class="form-control" [(ngModel)]="searchText"   placeholder="Search">
+      <!-- (keyup)="applyFilter($event.target.value)" -->
+    </div>
+  </div>
+  <div class="row no-gutters">
+    <div class="col-12">
+
+      <table class="table  table-bordered ">
+        <thead>
+          <tr>
+            <th>DESCRIPTION</th>
+            <th>TargetDate</th>
+            <th>Status</th>
+            <th>Update</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <!-- Ng2Search Pipe search Filter -->
+          <!-- <tr *ngFor="let todo of todosArray | filter:searchText"> -->
+          <tr *ngFor="let todo of todosArray | customSearchPipe:searchText ">
+    
+            <td>{{todo.description}}</td>
+            <td>{{todo.targetDate | date |uppercase }}</td>
+            <td>{{todo.done}}</td>
+            <td><button class="btn btn-success" (click)="onUpdateClick(todo.id)">Update</button></td>
+            <td> <button class="btn btn-danger" (click)="onDeleteClick(todo.id)">Delete</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <!-- {{todosArray | json}} -->
+</div>

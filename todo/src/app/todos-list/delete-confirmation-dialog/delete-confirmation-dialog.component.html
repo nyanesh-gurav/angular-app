@@ -1,0 +1,20 @@
+<div class="row backgroundColor">
+    <div class="col-12">
+        <div class="float-left">
+            <h5>Please Confirm....</h5>
+        </div>
+        <div class="float-right">
+            <button title="close"><i class="fa fa-times-circle button" aria-hidden="true" id="close-icon"
+                    (click)="onNoClick()"></i></button>
+        </div>
+    </div>
+</div>
+<hr>
+<div class="text-center">
+    <label><b>Do you really want to delete?</b></label>
+</div>
+<hr>
+<div class="pull-right">
+        <button class="btn btn-danger mr-2" (click)="onCancelClick(false)"> CANCEL</button>
+        <button class="btn btn-success" (click)="clickOk(true)"> OK</button>
+</div>
