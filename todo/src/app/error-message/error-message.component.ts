@@ -10,6 +10,8 @@ errorMessage:string="An error occured, Contact support ....."
   constructor() { }
 
   ngOnInit() {
+    console.log("nyanesh gurav");
+    
   }
 
 }
